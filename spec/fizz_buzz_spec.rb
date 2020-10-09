@@ -26,4 +26,11 @@ describe "fizz_buzz" do
     expect(has_zero_remainder?(1, 0)).to(eq(expected))
     expect(has_zero_remainder?(1, -1)).to(eq(expected))
   end
+
+  it "return nil if it is not number" do
+    expected = nil
+    expect(fizz_buzz('hello')).to(eq(expected))
+    expect(fizz_buzz(true)).to(eq(expected))
+    expect(fizz_buzz(0.5)).to (eq(expected))
+  end
 end
