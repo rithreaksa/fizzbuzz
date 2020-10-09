@@ -21,4 +21,9 @@ describe "fizz_buzz" do
     expected = 'fizz'
     expect(fizz_buzz(3)).to(eq(expected))
   end
+  it "returns false if divider is less than or equal to 0" do 
+    expected = false
+    expect(has_zero_remainder?(1, 0)).to(eq(expected))
+    expect(has_zero_remainder?(1, -1)).to(eq(expected))
+  end
 end
