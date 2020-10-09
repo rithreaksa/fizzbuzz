@@ -10,16 +10,19 @@ describe "fizz_buzz" do
   it "returns 'fizz buzz' if number is divisible by 15" do
     expected = "fizz buzz"
     expect(fizz_buzz(15)).to(eq(expected))
+    expect(fizz_buzz(30)).to(eq(expected))
   end
 
   it "returns 'buzz' if number is divisible by 5" do
   expected = 'buzz'
   expect(fizz_buzz(5)).to(eq(expected))
+  expect(fizz_buzz(10)).to(eq(expected))
   end
 
   it "returns 'fizz' if number is divisible by 3" do
     expected = 'fizz'
     expect(fizz_buzz(3)).to(eq(expected))
+    expect(fizz_buzz(6)).to(eq(expected))
   end
   it "returns false if divider is less than or equal to 0" do 
     expected = false
