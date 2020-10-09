@@ -12,4 +12,8 @@ describe "fizz_buzz" do
     expect(fizz_buzz(15)).to(eq(expected))
   end
 
+  it "returns 'buzz' if number is divisible by 5" do
+  expected = 'buzz'
+  expect(fizz_buzz(5)). to(eq(expected))
+  end
 end
